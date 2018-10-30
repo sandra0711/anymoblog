@@ -84,7 +84,7 @@ http://localhost:9393/tags/apple
 
 _________________________________________________________________________________________________________________________
 
-
+#eng 
 
 # Blog 1 Anonymous Blog
 
@@ -200,16 +200,3 @@ challenge, spruce up your blog design.
 Make it something you're proud to look at.
 
 ## Resources
-
-* [DBC Sandbox Challenge][sandbox challenge]
-* [DBC Proper Typesetting Challenge][proper formatting challenge]
-* [Active Record validations][AR validations]
-* [Active Record valid? and invalid?][valid_invalid]
-* [Active Record errors][errors]
-
-
-[sandbox challenge]: ../../../sinatra-sandbox-challenge
-[proper formatting challenge]: ../../../layout-drill-proper-typesetting-challenge
-[AR validations]: http://guides.rubyonrails.org/active_record_callbacks.html
-[valid_invalid]: http://guides.rubyonrails.org/active_record_validations.html#valid-questionmark-and-invalid-questionmark
-[errors]: http://guides.rubyonrails.org/active_record_validations.html#working-with-validation-errors
