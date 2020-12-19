@@ -1,0 +1,18 @@
+{{!-- <script src="/js/edit.js"></script> --}}
+<div class="container-fluid" style="padding-top:70px">
+  <form  action="/tag/{{tags.id}}" method="POST">
+    <div class="col-md-8">
+      <div  class="col-md-12">
+        <label for="tags" class="form-label">Выберите тег для поиска</label>
+          <select id="tags" class="form-control" name = "tags">
+          {{#each tags}}
+		      	<option value={{this._id}}>{{this.reference}}</option>
+          {{/each}}
+        </select> 
+      <div class="form-group">
+      <button class="btn" name="buttonSearch" type="submit" style ="background-color: blue; color: white; margin-left: 450px; margin-bottom: 10px;">Искать
+      </button>   
+    </div>
+  </form>
+</div>
+

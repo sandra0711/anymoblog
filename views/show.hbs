@@ -1,0 +1,33 @@
+{{!-- <script src="/js/show.js"></script> --}}
+<div class="container-fluid" style="padding-top:70px">
+  <div class="row mb-3">
+    <div class="col-md-6">
+      {{entry.title}}
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div  class="col-md-12">
+      {{entry.text}}
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div  class="col-md-12">
+      {{#each entry.tags}}
+		    <div><small>{{this.reference}}</small></div>
+      {{/each}}
+    </div>  
+  </div>
+  <div class="row mb-3">
+    <div  class="col-md-12">
+      <a href="/entry/delete/{{entry.id}}"><button class="btn" name="delete">Удалить</button></a>
+    </div>
+    <div  class="col-md-12">
+      <a href="/entry/edit/{{entry.id}}"><button class="btn" name="edit">Изменить</button></a>
+    </div>
+    <div  class="col-md-12">
+      <a href="/"><button class="btn" name="home">Назад</button></a>
+    </div>
+  </div>
+</div>
+  
+

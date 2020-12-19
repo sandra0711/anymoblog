@@ -1,0 +1,8 @@
+.imgContainer {
+  width: 200px;
+  overflow: hidden;
+}
+
+img {
+  height: 200px;
+}

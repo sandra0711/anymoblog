@@ -1,0 +1,42 @@
+.navbar{
+  background:#3f51b5;
+ }
+.navbar-brand{
+  color: #f97300;
+  cursor: pointer;
+ }
+ .nav-link {
+   color: #f4f4f4;
+ } 
+ .nav-link{
+  margin-right: 1em !important;
+ }
+ .nav-link:hover{
+  background: #f4f4f4;
+  color: #f97300;
+ }
+ .navbar-collapse{
+  justify-content: flex-end;
+ }
+ .navbar-toggler{
+   background:#fff !important;
+ }
+
+@media (max-device-width: 768px){
+  .mob-fix {
+  height: auto !important;
+  line-height: 20px !important;
+  text-align: center;
+  }
+  }
+
+  .count {
+    counter-reset: schetchik;
+  }
+  .count tr {
+      counter-increment: schetchik;
+  }
+  .count tr:before {
+      content: counter(schetchik);
+  }
+  

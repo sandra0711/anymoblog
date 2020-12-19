@@ -1,0 +1,14 @@
+<div class="container-fluid" style="padding-top:70px">
+  <ul>
+    {{#each entries}}
+      <li>
+         <a href="/entry/{{this.id}}"><div><small>{{this.title}}</small></div></a>
+        <div>{{this.text}}</div>
+        {{#each this.tags}}
+          <div><small>{{this.reference}}</small></div>
+        {{/each}}
+      </li>
+    {{/each}} 
+  </ul>
+  <h1>Это все</h1>
+</div>

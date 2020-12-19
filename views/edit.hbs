@@ -1,0 +1,35 @@
+{{!-- <script src="/js/edit.js"></script> --}}
+<div class="container-fluid" style="padding-top:70px">
+  <form  action="/entry/edit/{{entry.id}}" method="POST">
+    <div class="form-group row mb-3">
+      <div class="col-md-6">
+        <label class="form-label" for="title">Заголовок</label> 
+       <small><input type="text" class="form-control" id="title" name = "title" value='{{entry.title}}'></small>
+      </div>
+    </div>
+    <div class="form-group row mb-3">
+      <div  class="col-md-12">
+      <label class="form-label" for="text">Текст</label> 
+      <textarea class="form-control" id="text" name = "text">{{entry.text}}</textarea>
+    </div>
+    <div class="col-md-8">
+      <div  class="col-md-12">
+        <label for="tags" class="form-label">Теги</label>
+          {{#each entry.tags}}
+		        <div><small>{{this.reference}}</small></div>
+          {{/each}}
+        <select id="tags" class="form-control" name = "newTags">
+          {{#each newTags}}
+		      	<option value={{this._id}}>{{this.reference}}</option>
+          {{/each}}
+        </select> 
+        <p class="help-block"><small>Выберите теги из списка</small></p> 
+        <button class="btn" name="tagMore" href="/tag">Еще тег</button>
+      </div>  
+    <div class="form-group">
+      <button class="btn" name="buttonEdit" type="submit" style ="background-color: blue; color: white; margin-left: 450px; margin-bottom: 10px;">Изменить
+      </button>   
+    </div>
+  </form>
+</div>
+
