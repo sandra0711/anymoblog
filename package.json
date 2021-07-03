@@ -4,6 +4,8 @@
   "description": "## Общие сведения",
   "main": "index.js",
   "scripts": {
+    "start": "npm app",
+    "dev": "npx nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
